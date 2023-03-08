@@ -4,12 +4,9 @@ export default styled.section`
   width: 100vw;
   height: 100vh;
   display: flex;
-  padding: 10% ;
   align-items: center;
   .text {
-    width:50%;
-    .intro{
-      font-size: 2.4rem;
+    .intro{;
       p{
         color: var(--color-mint-green);
       };
@@ -19,8 +16,6 @@ export default styled.section`
     }
     .desc{
       p{
-        margin-top: 2rem;
-        font-size: 1.25rem;
         max-width: 35rem;
       }
     }
@@ -38,8 +33,7 @@ export default styled.section`
       }
     }
   }
-  .image{
-    width: 50%;
+  .image{d
     img{
       width: 100%;
     }

@@ -3,7 +3,7 @@ import gsap from "utils/gsap"
 import TechSectionStyle from "./TechSection.style";
 import {ScrollTrigger} from "gsap/dist/ScrollTrigger";
 
-function TechSection() {
+function  TechSection() {
     useEffect(() => {
         const timeline = gsap.timeline()
         new ScrollTrigger({
