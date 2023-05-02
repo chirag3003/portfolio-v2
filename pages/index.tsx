@@ -4,6 +4,7 @@ import HeroSection from "../components/HeroSection";
 import Wave1 from "../components/Wave1";
 import TechSection from "../components/TechSection";
 import Blob1 from "../components/Blob1";
+import SkillCards from "../components/SkillCards";
 
 export default function Home() {
     return (
@@ -18,6 +19,7 @@ export default function Home() {
                 <Header/>
                 <HeroSection />
                 <TechSection/>
+                <SkillCards/>
                 <Wave1/>
                 <Blob1/>
             </main>
