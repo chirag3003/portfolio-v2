@@ -21,7 +21,6 @@ function TechSection() {
             y: "80%", x: "80%",
         }, 0)
         timeline.to("#blob1", {x: 0, y: 0}, 0)
-
     }, [])
     return (
         <TechSectionStyle id={"tech_section"} className={"flex flex-col lg:flex-row p-10 lg:p-48 pt-36 lg:pt-48"}>

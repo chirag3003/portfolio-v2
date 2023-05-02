@@ -2,14 +2,10 @@ import styled from "styled-components";
 
 export default styled.div`
   width:100%;
-  padding: 30px;
-  //background: var(--color3);
   border-radius: 10px;
   margin: auto;
   color: var(--color-white);
   overflow: hidden;
-  aspect-ratio: 1/1.1;
-
   .content::before {
     content: "";
     position: absolute;
@@ -28,21 +24,33 @@ export default styled.div`
     position: absolute;
     height: max(20%, 200px);
     aspect-ratio: 1/1;
-    background: orange;
+    background: var(--color-buff);
     top: -100px;
     left: -100px;
     z-index: -2;
     border-radius: 100%;
     transition: 0.8s all ease;
+    p{
+      transition: 0.8s all ease;
+    }    
+    h2{
+      transition: 0.8s all ease;
+    }
   }
 
   :hover {
+    p{
+      color:var(--color1);
+    }
     .content::before {
       height: max(20%, 200px)
     }
     .content::after {
       height: 250%;
       border-radius: 0;
+    }
+    .card-heading{
+      color:lightgreen;
     }
   }
 

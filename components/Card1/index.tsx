@@ -10,12 +10,12 @@ interface cardProps{
 
 function Index({Icon}:cardProps) {
     return (
-        <Card1Style className="card w-full bg-gray-900">
+        <Card1Style className="card w-full bg-gray-900 p-5 lg:p-8">
             <div className="content relative h-full z-0">
                 <div className="icon">
                     <Icon height={35} width={35}/>
                 </div>
-                <div className="card-heading my-8 text-3xl font-semibold">
+                <div className="card-heading mt-20 mb-6 text-2xl font-semibold">
                     <h2>
                         Heading Text
                     </h2>
