@@ -7,15 +7,18 @@ function setScrollAnimation(){
     const timeline = gsap.timeline()
     new ScrollTrigger({
         animation:timeline,
-        trigger:document.body,
-        start:0,
-        end:"100vw",
-        scrub:1
+        trigger:document.querySelector("#hero_section"),
+        start:"40% top",
+        end:"45% top",
+        scrub:1,
     })
 
     timeline.to(document.querySelector("#hero_section .text"),{
-        x:"-100%"
+        x:"-150%"
     })
+    timeline.to(document.querySelector("#hero_section .image"),{
+        x:"150%"
+    },0)
 
 }
 

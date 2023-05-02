@@ -11,21 +11,20 @@ function Header() {
     const navRef = useRef(null)
     useEffect(() => {
         ScrollTrigger.matchMedia({
-            "(min-width: 1024px)": function() {
+            "(min-width: 1024px)": function () {
                 gsap.to(navRef.current, {
-                    y: 30,  width: "75%", borderRadius: 40,
+                    y: 30, width: "75%", borderRadius: 40,
                     scrollTrigger: {
                         trigger: document.body,
                         start: 30,
                         end: 30,
                         scrub: 1,
-
                     }
                 })
             },
-            "(max-width: 1023px)": function() {
+            "(max-width: 1023px)": function () {
                 gsap.to(navRef.current, {
-                    y: 5,  width: "98%", borderRadius: 5,
+                    y: 5, width: "98%", borderRadius: 5,
                     scrollTrigger: {
                         trigger: document.body,
                         start: 30,
@@ -36,31 +35,18 @@ function Header() {
                 })
             }
         })
-
-
-        // gsap.to(navRef.current, {
-        //     y: 30, duration: 2, width: "75%", borderRadius: 40,
-        //     scrollTrigger: {
-        //         trigger: document.body,
-        //         start: 30,
-        //         end: 30,
-        //         scrub: 1,
-        //
-        //     }
-        // })
-    },[])
+    }, [])
     return (
         <HeaderStyle ref={navRef}>
             <div className="container">
                 <div className="title"><h1>{"<"}Chirag{"/>"}</h1></div>
-                <div className="links">
-                    <Link href={"#"} passHref>
-                        <p>About Me</p>
-                    </Link>
-                    <Link href={"#"} passHref>
+                <div className="links gap-2">
+                    <Link
+                        className={"bg-gray-100 bg-opacity-30 rounded"}
+                        href={"#"}>
                         <p>Contact Me</p>
                     </Link>
-                    <Link href={"#"} passHref>
+                    <Link className={"bg-gray-100 bg-opacity-30 rounded"} href={"#"}>
                         <p>My Projects</p>
                     </Link>
                 </div>
@@ -76,7 +62,7 @@ function Header() {
                     </a>
                 </div>
                 <div className="menu-btn">
-                    <button >
+                    <button>
                         <Menu height={25} width={25}/>
                     </button>
                 </div>

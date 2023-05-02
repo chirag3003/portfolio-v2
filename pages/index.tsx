@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import Header from "components/Header";
 import HeroSection from "../components/HeroSection";
 import Wave1 from "../components/Wave1";
@@ -19,7 +18,7 @@ export default function Home() {
                 <Header/>
                 <HeroSection />
                 <TechSection/>
-                <Wave1></Wave1>
+                <Wave1/>
                 <Blob1/>
             </main>
         </div>

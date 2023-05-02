@@ -9,6 +9,7 @@ export default styled.div`
   top: -10vw;
   left: -10vw;
   transform:translate(-30vw,-30vw);
+z-index: 0;
   img{
     height: 100%;
     width: 100%;
