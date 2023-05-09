@@ -41,16 +41,13 @@ export default styled.div`
   :hover {
     p{
       color:var(--color1);
-    }
+    } 
     .content::before {
       height: max(20%, 200px)
     }
     .content::after {
       height: 250%;
       border-radius: 0;
-    }
-    .card-heading{
-      color:lightgreen;
     }
   }
 

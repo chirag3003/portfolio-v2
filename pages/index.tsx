@@ -5,6 +5,8 @@ import Wave1 from "../components/Wave1";
 import TechSection from "../components/TechSection";
 import Blob1 from "../components/Blob1";
 import SkillCards from "../components/SkillCards";
+import ContactUsStyle from "../components/ContactUs/ContactUs.style";
+import ContactUs from "../components/ContactUs";
 
 export default function Home() {
     return (
@@ -20,6 +22,7 @@ export default function Home() {
                 <HeroSection />
                 <TechSection/>
                 <SkillCards/>
+                <ContactUs />
                 <Wave1/>
                 <Blob1/>
             </main>
