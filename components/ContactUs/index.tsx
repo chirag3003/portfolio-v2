@@ -16,7 +16,7 @@ function ContactUs() {
                 <div className="text w-full">
                     {infoCards.map(({Icon,value,href},index) => {
                         return (
-                            <a key={index} href={href} className="info-card flex w-full rounded p-4 mb-4">
+                            <a rel={"noreferrer"} target={"_blank"} key={index} href={href} className="info-card flex w-full rounded p-4 mb-4">
                                 <div className="icon"><Icon width={25} height={25}/></div>
                                 <p className={"ml-5"}>{value}</p>
                             </a>

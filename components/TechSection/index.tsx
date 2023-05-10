@@ -2,6 +2,8 @@ import React, {useEffect} from 'react';
 import gsap from "utils/gsap"
 import TechSectionStyle from "./TechSection.style";
 import {ScrollTrigger} from "gsap/dist/ScrollTrigger";
+import {techSection} from "../../Config";
+
 
 function TechSection() {
     useEffect(() => {
@@ -32,13 +34,14 @@ function TechSection() {
                 </p>
             </div>
             <div className="skill-list w-full lg:h-full flex flex-col justify-center">
-                <div className="list grid grid-cols-4 p-2 md:grid-cols-5 xl:grid-cols-6 gap-5 w-full">
-                    {Array(10).fill("").map((_, index) => {
+                <div className="list grid grid-cols-4 p-2 md:grid-cols-5 xl:grid-cols-6 gap-7 w-full">
+                    {techSection.map(({name,icon}, index) => {
                         return (
-                            <div key={index} className="skill ">
-                                <div className="image w-full aspect-square">
-
+                            <div key={index} className="skill flex flex-col justify-center items-center">
+                                <div className="image w-full aspect-square flex items-center justify-center p-2 ">
+                                    <img className={'w-full h-full'} src={icon} alt={name}/>
                                 </div>
+                                <p className={"text-sm"}>{name}</p>
                             </div>
                         )
                     })}

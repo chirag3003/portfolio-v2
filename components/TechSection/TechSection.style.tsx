@@ -7,9 +7,11 @@ export default  styled.section`
     color:var(--color-buff)
   }
   .skill-list {
-    .skill .image{
-      background:var(--color3);
-      border-radius:10px;
+    .skill {
+      .image {
+        background: var(--color3);
+        border-radius: 10px;
+      }
     }
   }
 `
